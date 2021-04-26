@@ -8,10 +8,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-     private int number = 0;
-     Button button;
-     Button resetBtn;
-     TextView textView;
+    private int number = 0;
+    Button button;
+    Button resetBtn;
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                number ++;
+                number++;
                 textView.setText(Integer.toString(number));
             }
         });
